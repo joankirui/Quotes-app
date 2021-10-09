@@ -14,6 +14,9 @@ export class QuoteComponent implements OnInit {
     new Quote(4, 'Optimism is an occupational hazard of programming','Kent Beck', 'Winny', new Date(2020,12,12)),
     new Quote(5, 'Comfort is fueled by money','Wentworth Miller','Yusuf', new Date(2021,2,10)),
   ];
+  toggleDetails(index: number){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
 
 
   constructor() { }

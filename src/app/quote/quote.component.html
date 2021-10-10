@@ -2,7 +2,7 @@
     <h3>Welcome to Qoutes</h3>
     <hr>
     <ul>
-      <div *ngFor='let quote of quotes:let i = index'>
+      <div *ngFor='let quote of quotes;let i = index'>
       <li>{{quote.name}}</li>
       <button (click)='toggleDetails(i)'>Toggle Details</button>
         <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote'></app-quote-detail>

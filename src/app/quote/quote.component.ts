@@ -8,11 +8,11 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
-    new Quote(1, 'Comfort in life is fueled by money', 'Joan'),
-    new Quote(2, 'Yours is the only opinion of you that matters' ,'Jacky'),
-    new Quote(3, 'Who you are tomorrow begins with what you do today' ,'Yusuf'),
-    new Quote(4, 'Leap and a net will appear' ,'Martha'),
-    new Quote(5, 'Optimism is an occupational hazard of programming' ,'Winny'),
+    new Quote(1, 'Comfort in life is fueled by money', 'Joan', new Date(2020,2,14)),
+    new Quote(2, 'Yours is the only opinion of you that matters' ,'Jacky', new Date(2021,3,8)),
+    new Quote(3, 'Who you are tomorrow begins with what you do today' ,'Yusuf', new Date(2019,0,12)),
+    new Quote(4, 'Leap and a net will appear' ,'Martha', new Date(2022,3,29)),
+    new Quote(5, 'Optimism is an occupational hazard of programming' ,'Winny', new Date(2020,11,12)),
   ];
   toggleDetails(index: number){
     this.quotes[index].showPerson = !this.quotes[index].showPerson;

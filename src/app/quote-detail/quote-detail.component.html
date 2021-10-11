@@ -1,10 +1,5 @@
 <p>
-    {{quote.person}}
+    Author: {{quote.author}}<br>Submitted by: {{quote.person}}<br>Created on: {{quote.dateCreated|date}}
 </p>
-<p>
-    {{quote.author}}
-</p>
-<p>
-    {{quote.dateCreated|date}}
-</p>
-<button (click)= 'quoteComplete(true)'>Complete</button>
+<p>This quote was created {{quote.dateCreated|quoteAge}} days ago</p>
+<button (click)= 'quoteDelete(true)'class="btn "><i class="fa fa-trash" style="font-size:30px;">Delete quote</i></button>

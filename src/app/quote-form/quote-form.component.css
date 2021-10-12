@@ -1,0 +1,11 @@
+h2{
+    text-decoration: underline;
+}
+form {
+    padding: auto;
+}
+.container{
+    background-color: beige;
+    opacity: 0.9;
+    border-radius: 10px;
+}
